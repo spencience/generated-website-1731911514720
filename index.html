@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <title>Home</title>
+                        <script src="https://cdn.tailwindcss.com"></script>
+                    </head>
+                    <body class="bg-white">
+                        <main class="w-full h-full bg-gray-100 p-4 md:p-6 lg:p-8 justify-center items-center flex flex-col gap-4">
+  <section class="mx-auto max-w-3xl shadow-md rounded bg-white p-4 md:p-6">
+    <h1 class="text-3xl font-bold mb-2">Snake Game</h1>
+    <div id="game-container" class="w-full h-64 bg-gray-200 rounded relative"></div>
+    <div class="flex justify-center gap-2 mt-4">
+      <button id="start-game" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Start Game</button>
+      <button id="reset-game" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" disabled>Reset Game</button>
+    </div>
+    <div class="flex justify-center gap-2 mt-2">
+      <span class="text-lg font-bold">Score:</span>
+      <span id="score" class="text-lg font-bold">0</span>
+    </div>
+  </section>
+  <section class="mx-auto max-w-3xl shadow-md rounded bg-white p-4 md:p-6 mt-4">
+    <h2 class="text-2xl font-bold mb-2">Game Instructions</h2>
+    <ul class="list-disc list-inside text-lg">
+      <li>Use the arrow keys to move the snake.</li>
+      <li>Eat the food pellets to score points.</li>
+      <li>Avoid hitting the walls or the snake's tail.</li>
+    </ul>
+  </section>
+  <section class="mx-auto max-w-3xl shadow-md rounded bg-white p-4 md:p-6 mt-4">
+    <h2 class="text-2xl font-bold mb-2">Game History</h2>
+    <div id="game-history" class="overflow-y-auto max-h-48 text-lg font-mono">
+      <p>No game history yet.</p>
+    </div>
+  </section>
+</main>
+                    </body>
+                    </html>
